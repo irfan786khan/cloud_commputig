@@ -81,7 +81,7 @@ def delete_task(task_id):
 @app.route('/')
 def home():
     if 'username' in session:
-        return render_template('cloud_pr.html')
+        return render_template('index.html')
     return redirect('/login')
 
 
